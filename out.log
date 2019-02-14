@@ -1,0 +1,513 @@
+> zigbee2mqtt@1.1.1 start /opt/zigbee2mqtt
+> node index.js
+ 
+  zigbee2mqtt:info 2019-2-13 19:44:04 Logging to directory: '/opt/zigbee2mqtt/data/log/2019-02-13.19-44-04'
+  zigbee2mqtt:info 2019-2-13 19:44:05 Starting zigbee2mqtt version 1.1.1 (commit #04e6801)
+  zigbee2mqtt:info 2019-2-13 19:44:05 Starting zigbee-shepherd
+  zigbee2mqtt:info 2019-2-13 19:44:05 zigbee-shepherd started
+  zigbee2mqtt:info 2019-2-13 19:44:05 Coordinator firmware version: '20181024'
+  zigbee2mqtt:info 2019-2-13 19:44:05 Currently 5 devices are joined:
+  zigbee2mqtt:info 2019-2-13 19:44:05 zbSocket3 (0x00158d000163d2cf): ZNCZ02LM - Xiaomi Mi power plug ZigBee (Router)
+  zigbee2mqtt:info 2019-2-13 19:44:05 zbSocket1 (0x00158d000152ff36): ZNCZ02LM - Xiaomi Mi power plug ZigBee (Router)
+  zigbee2mqtt:info 2019-2-13 19:44:05 zbSocket2 (0x00158d000163fa38): ZNCZ02LM - Xiaomi Mi power plug ZigBee (Router)
+  zigbee2mqtt:info 2019-2-13 19:44:05 zbBodySensor (0x00158d0001dc2e79): RTCGQ01LM - Xiaomi MiJia human body movement sensor (EndDevice)
+  zigbee2mqtt:info 2019-2-13 19:44:05 zbDimmer1 (0x00124b001a4ddba6): abb71ca5fe1846f185cfbda554046cce - LivingWise Dimmer (Router)
+  zigbee2mqtt:info 2019-2-13 19:44:05 Zigbee: disabling joining new devices.
+  zigbee2mqtt:info 2019-2-13 19:44:05 Connecting to MQTT server at mqtt://192.168.213.80
+  zigbee2mqtt:info 2019-2-13 19:44:06 zigbee-shepherd ready
+  zigbee2mqtt:info 2019-2-13 19:44:06 Connected to MQTT server
+  zigbee2mqtt:info 2019-2-13 19:44:06 MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'online'
+  zigbee2mqtt:info 2019-2-13 19:44:06 MQTT publish: topic 'zigbee2mqtt/zbSocket3', payload '{"state":"ON","power":2.45,"voltage":115.5,"consumption":9.33,"temperature":32,"linkquality":126}'
+  zigbee2mqtt:info 2019-2-13 19:44:06 MQTT publish: topic 'zigbee2mqtt/zbSocket1', payload '{"state":"OFF","power":0,"voltage":115.2,"consumption":5.28,"temperature":28,"linkquality":47}'
+  zigbee2mqtt:info 2019-2-13 19:44:06 MQTT publish: topic 'zigbee2mqtt/zbSocket2', payload '{"state":"OFF","power":0,"voltage":119,"consumption":0.32,"temperature":25,"linkquality":113}'
+  zigbee2mqtt:info 2019-2-13 19:44:06 MQTT publish: topic 'zigbee2mqtt/zbBodySensor', payload '{"occupancy":false,"linkquality":120,"battery":100,"voltage":3005}'
+  zigbee2mqtt:info 2019-2-13 19:44:06 MQTT publish: topic 'zigbee2mqtt/zbDimmer1', payload '{"state":"OFF"}'
+  zigbee2mqtt:warn 2019-2-13 19:44:06 Cannot handle MQTT message on 'zigbee2mqtt/bridge/networkmap' with data '[]'
+  zigbee2mqtt:info 2019-2-13 19:44:10 Zigbee publish to device '0x00124b001a4ddba6', genOnOff - on - {} - {"manufSpec":0,"disDefaultRsp":0} - null
+Checkpoint 1 dataConfirm {"status":0,"endpoint":1,"transid":1}
+Checkpoint 1 incomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":47,"securityuse":0,"timestamp":5865502,"transseqnumber":0,"len":5,"data":{"type":"Buffer","data":[24,1,11,1,0]}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 1 zclIncomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":47,"securityuse":0,"timestamp":5865502,"transseqnumber":0,"len":5,"data":{"0":24,"1":1,"2":11,"3":1,"4":0},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":1,"cmdId":"defaultRsp","payload":{"cmdId":1,"statusCode":0}}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 4 Endpoint {
+  isLocal: [Function],
+  device:
+   Device {
+     _id: 6,
+     type: 'Router',
+     ieeeAddr: '0x00124b001a4ddba6',
+     nwkAddr: 622,
+     manufId: 0,
+     manufName: '欧瑞博',
+     powerSource: 'Mains (single phase)',
+     modelId: 'abb71ca5fe1846f185cfbda554046cce',
+     epList: [ 1 ],
+     status: 'offline',
+     joinTime: null,
+     endpoints: { '1': [Circular] } },
+  profId: 260,
+  epId: 1,
+  devId: 1,
+  inClusterList: [ 0, 4, 5, 6, 8, 768 ],
+  outClusterList: [ 0 ],
+  clusters:
+   Ziee {
+     zapp: null,
+     genBasic: { dir: [Spec], attrs: [Spec] },
+     genGroups: { dir: [Spec], attrs: [Spec] },
+     genScenes: { dir: [Spec], attrs: [Spec] },
+     genOnOff: { dir: [Spec], attrs: [Spec] },
+     genLevelCtrl: { dir: [Spec], attrs: [Spec] },
+     lightingColorCtrl: { dir: [Spec], attrs: [Spec] } },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  foundation: [Function],
+  functional: [Function],
+  bind: [Function],
+  unbind: [Function],
+  read: [Function],
+  write: [Function],
+  report: [Function] } ===== {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":47,"securityuse":0,"timestamp":5865502,"transseqnumber":0,"len":5,"data":{"0":24,"1":1,"2":11,"3":1,"4":0},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":1,"cmdId":"defaultRsp","payload":{"cmdId":1,"statusCode":0}}}
+Checkpoint 4.1
+  zigbee2mqtt:info 2019-2-13 19:44:10 MQTT publish: topic 'zigbee2mqtt/zbDimmer1', payload '{"state":"ON"}'
+Checkpoint 1 dataConfirm {"status":0,"endpoint":1,"transid":2}
+Checkpoint 1 incomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5866027,"transseqnumber":0,"len":5,"data":{"type":"Buffer","data":[24,2,11,12,130]}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 1 zclIncomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5866027,"transseqnumber":0,"len":5,"data":{"0":24,"1":2,"2":11,"3":12,"4":130},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":2,"cmdId":"defaultRsp","payload":{"cmdId":12,"statusCode":130}}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 4 Endpoint {
+  isLocal: [Function],
+  device:
+   Device {
+     _id: 6,
+     type: 'Router',
+     ieeeAddr: '0x00124b001a4ddba6',
+     nwkAddr: 622,
+     manufId: 0,
+     manufName: '欧瑞博',
+     powerSource: 'Mains (single phase)',
+     modelId: 'abb71ca5fe1846f185cfbda554046cce',
+     epList: [ 1 ],
+     status: 'offline',
+     joinTime: null,
+     endpoints: { '1': [Circular] } },
+  profId: 260,
+  epId: 1,
+  devId: 1,
+  inClusterList: [ 0, 4, 5, 6, 8, 768 ],
+  outClusterList: [ 0 ],
+  clusters:
+   Ziee {
+     zapp: null,
+     genBasic: { dir: [Spec], attrs: [Spec] },
+     genGroups: { dir: [Spec], attrs: [Spec] },
+     genScenes: { dir: [Spec], attrs: [Spec] },
+     genOnOff: { dir: [Spec], attrs: [Spec] },
+     genLevelCtrl: { dir: [Spec], attrs: [Spec] },
+     lightingColorCtrl: { dir: [Spec], attrs: [Spec] } },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  foundation: [Function],
+  functional: [Function],
+  bind: [Function],
+  unbind: [Function],
+  read: [Function],
+  write: [Function],
+  report: [Function] } ===== {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5866027,"transseqnumber":0,"len":5,"data":{"0":24,"1":2,"2":11,"3":12,"4":130},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":2,"cmdId":"defaultRsp","payload":{"cmdId":12,"statusCode":130}}}
+Checkpoint 4.1
+  zigbee2mqtt:info 2019-2-13 19:44:12 Zigbee publish to device '0x00124b001a4ddba6', genOnOff - off - {} - {"manufSpec":0,"disDefaultRsp":0} - null
+Checkpoint 1 dataConfirm {"status":0,"endpoint":1,"transid":3}
+Checkpoint 1 incomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5871256,"transseqnumber":0,"len":5,"data":{"type":"Buffer","data":[24,3,11,0,0]}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 1 zclIncomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5871256,"transseqnumber":0,"len":5,"data":{"0":24,"1":3,"2":11,"3":0,"4":0},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":3,"cmdId":"defaultRsp","payload":{"cmdId":0,"statusCode":0}}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 4 Endpoint {
+  isLocal: [Function],
+  device:
+   Device {
+     _id: 6,
+     type: 'Router',
+     ieeeAddr: '0x00124b001a4ddba6',
+     nwkAddr: 622,
+     manufId: 0,
+     manufName: '欧瑞博',
+     powerSource: 'Mains (single phase)',
+     modelId: 'abb71ca5fe1846f185cfbda554046cce',
+     epList: [ 1 ],
+     status: 'offline',
+     joinTime: null,
+     endpoints: { '1': [Circular] } },
+  profId: 260,
+  epId: 1,
+  devId: 1,
+  inClusterList: [ 0, 4, 5, 6, 8, 768 ],
+  outClusterList: [ 0 ],
+  clusters:
+   Ziee {
+     zapp: null,
+     genBasic: { dir: [Spec], attrs: [Spec] },
+     genGroups: { dir: [Spec], attrs: [Spec] },
+     genScenes: { dir: [Spec], attrs: [Spec] },
+     genOnOff: { dir: [Spec], attrs: [Spec] },
+     genLevelCtrl: { dir: [Spec], attrs: [Spec] },
+     lightingColorCtrl: { dir: [Spec], attrs: [Spec] } },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  foundation: [Function],
+  functional: [Function],
+  bind: [Function],
+  unbind: [Function],
+  read: [Function],
+  write: [Function],
+  report: [Function] } ===== {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5871256,"transseqnumber":0,"len":5,"data":{"0":24,"1":3,"2":11,"3":0,"4":0},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":3,"cmdId":"defaultRsp","payload":{"cmdId":0,"statusCode":0}}}
+Checkpoint 4.1
+  zigbee2mqtt:info 2019-2-13 19:44:12 MQTT publish: topic 'zigbee2mqtt/zbDimmer1', payload '{"state":"OFF"}'
+Checkpoint 1 dataConfirm {"status":0,"endpoint":1,"transid":4}
+Checkpoint 1 incomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5871686,"transseqnumber":0,"len":5,"data":{"type":"Buffer","data":[24,4,11,12,130]}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 1 zclIncomingMsg {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5871686,"transseqnumber":0,"len":5,"data":{"0":24,"1":4,"2":11,"3":12,"4":130},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":4,"cmdId":"defaultRsp","payload":{"cmdId":12,"statusCode":130}}}
+Checkpoint 2 1
+Checkpoint 3 Coordpoint {
+  isLocal: [Function],
+  device:
+   Coordinator {
+     _id: 1,
+     type: 'Coordinator',
+     ieeeAddr: '0x00124b0012013b22',
+     nwkAddr: 0,
+     manufId: 0,
+     manufName: undefined,
+     powerSource: undefined,
+     modelId: undefined,
+     epList: [ 1, 2, 3, 4, 5, 6, 11 ],
+     status: 'online',
+     joinTime: 1550108645,
+     endpoints:
+      { '1': [Circular],
+        '2': [Coordpoint],
+        '3': [Coordpoint],
+        '4': [Coordpoint],
+        '5': [Coordpoint],
+        '6': [Coordpoint],
+        '11': [Coordpoint] } },
+  profId: 260,
+  epId: 1,
+  devId: 5,
+  inClusterList: [],
+  outClusterList: [],
+  clusters: Ziee { zapp: null },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  isDelegator: [Function] }
+Checkpoint 4 Endpoint {
+  isLocal: [Function],
+  device:
+   Device {
+     _id: 6,
+     type: 'Router',
+     ieeeAddr: '0x00124b001a4ddba6',
+     nwkAddr: 622,
+     manufId: 0,
+     manufName: '欧瑞博',
+     powerSource: 'Mains (single phase)',
+     modelId: 'abb71ca5fe1846f185cfbda554046cce',
+     epList: [ 1 ],
+     status: 'offline',
+     joinTime: null,
+     endpoints: { '1': [Circular] } },
+  profId: 260,
+  epId: 1,
+  devId: 1,
+  inClusterList: [ 0, 4, 5, 6, 8, 768 ],
+  outClusterList: [ 0 ],
+  clusters:
+   Ziee {
+     zapp: null,
+     genBasic: { dir: [Spec], attrs: [Spec] },
+     genGroups: { dir: [Spec], attrs: [Spec] },
+     genScenes: { dir: [Spec], attrs: [Spec] },
+     genOnOff: { dir: [Spec], attrs: [Spec] },
+     genLevelCtrl: { dir: [Spec], attrs: [Spec] },
+     lightingColorCtrl: { dir: [Spec], attrs: [Spec] } },
+  onAfDataConfirm: null,
+  onAfReflectError: null,
+  onAfIncomingMsg: null,
+  onAfIncomingMsgExt: null,
+  onZclFoundation: null,
+  onZclFunctional: null,
+  foundation: [Function],
+  functional: [Function],
+  bind: [Function],
+  unbind: [Function],
+  read: [Function],
+  write: [Function],
+  report: [Function] } ===== {"groupid":0,"clusterid":6,"srcaddr":622,"srcendpoint":1,"dstendpoint":1,"wasbroadcast":0,"linkquality":44,"securityuse":0,"timestamp":5871686,"transseqnumber":0,"len":5,"data":{"0":24,"1":4,"2":11,"3":12,"4":130},"zclMsg":{"frameCntl":{"frameType":0,"manufSpec":0,"direction":1,"disDefaultRsp":1},"manufCode":0,"seqNum":4,"cmdId":"defaultRsp","payload":{"cmdId":12,"statusCode":130}}}
+Checkpoint 4.1
